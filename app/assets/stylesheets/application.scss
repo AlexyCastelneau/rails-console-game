@@ -1,0 +1,56 @@
+// Graphical variables
+@import "config/fonts";
+@import "config/colors";
+
+// External libraries
+// @import "bootstrap/scss/bootstrap";
+// @import "font-awesome-sprockets";
+// @import "font-awesome";
+
+// Your CSS partials
+@import "components/index";
+@import "pages/index";
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Crimson Text";
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 60px;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 50px;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 40px;
+}
+
+h4 {
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+a {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-size: 20px;
+}

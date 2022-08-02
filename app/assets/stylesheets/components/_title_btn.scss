@@ -1,0 +1,15 @@
+.title-btn {
+  margin: 5px 0;
+  padding: 10px 15px;
+  color: $green;
+  font-size: 30px;
+  border-width: 3px;
+  border-style: outset;
+  border-color: $green;
+  border-radius: 5px;
+}
+
+.title-btn:hover {
+  color: $deep-green;
+  border-color: $light-green;
+}
