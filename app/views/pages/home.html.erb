@@ -1,3 +1,17 @@
-<h1>the home</h1>
-
-<%= link_to "Login", new_user_session_path %>
+<div class="dark-bkg">
+  <div class="title-screen">
+    <h1>Welcome to a new</h1>
+    <h1>Adventure</h1>
+    <div class="menu">
+      <% if current_user %>
+        <%= link_to "Profile", "#", class: "title-btn" %>
+        <%= link_to "New Game", "#", class: "title-btn" %>
+        <%= link_to "Load Game", "#", class: "title-btn" %>
+        <%= link_to "Options", "#", class: "title-btn" %>
+        <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "title-btn" %>
+      <% else %>
+        <%= link_to "Log in", new_user_session_path, class: "title-btn" %>
+      <% end %>
+    </div>
+  </div>
+</div>
