@@ -1,0 +1,13 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  enemy: one
+  armor_value: 1
+  primary_weapon: 1
+  secondary_weapon: 1
+
+two:
+  enemy: two
+  armor_value: 1
+  primary_weapon: 1
+  secondary_weapon: 1
