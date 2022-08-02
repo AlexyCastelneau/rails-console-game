@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  perso: one
+  head: 1
+  body: 1
+  hands: 1
+  legs: 1
+  feet: 1
+  primary_weapon: 1
+  secondary_weapon: 1
+
+two:
+  perso: two
+  head: 1
+  body: 1
+  hands: 1
+  legs: 1
+  feet: 1
+  primary_weapon: 1
+  secondary_weapon: 1
