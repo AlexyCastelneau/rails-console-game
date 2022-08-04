@@ -52,10 +52,10 @@ ActiveRecord::Schema.define(version: 2022_08_02_141932) do
   end
 
   create_table "enemies", force: :cascade do |t|
-    t.string "type"
-    t.string "name"
-    t.string "difficulty"
-    t.integer "lvl"
+    t.string "type", null: false
+    t.string "name", null: false
+    t.string "difficulty", null: false
+    t.integer "lvl", default: 0
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -103,7 +103,7 @@ ActiveRecord::Schema.define(version: 2022_08_02_141932) do
   create_table "games", force: :cascade do |t|
     t.integer "user_id", null: false
     t.integer "perso_id", null: false
-    t.time "session_start", default: "2000-01-01 14:28:47", null: false
+    t.time "session_start", default: "2000-01-01 14:48:34", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["perso_id"], name: "index_games_on_perso_id"
@@ -146,7 +146,7 @@ ActiveRecord::Schema.define(version: 2022_08_02_141932) do
   end
 
   create_table "items", force: :cascade do |t|
-    t.boolean "consumable"
+    t.boolean "consumable", null: false
     t.integer "item"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -159,12 +159,12 @@ ActiveRecord::Schema.define(version: 2022_08_02_141932) do
 
   create_table "persos", force: :cascade do |t|
     t.integer "user_id", null: false
-    t.time "time_played", default: "2000-01-01 00:00:00", null: false
-    t.string "pseudo", null: false
+    t.float "time_played"
+    t.string "pseudo"
     t.integer "lvl", default: 0
-    t.integer "exp"
-    t.integer "exp_needed"
-    t.integer "deaths"
+    t.integer "exp", default: 0
+    t.integer "exp_needed", default: 100
+    t.integer "deaths", default: 0
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["user_id"], name: "index_persos_on_user_id"
@@ -172,7 +172,7 @@ ActiveRecord::Schema.define(version: 2022_08_02_141932) do
 
   create_table "skills", force: :cascade do |t|
     t.text "description"
-    t.boolean "active"
+    t.boolean "active", null: false
     t.integer "skill"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
@@ -189,8 +189,8 @@ ActiveRecord::Schema.define(version: 2022_08_02_141932) do
 
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
-    t.string "encrypted_password", default: "", null: false
     t.string "username", default: "", null: false
+    t.string "encrypted_password", default: "", null: false
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"

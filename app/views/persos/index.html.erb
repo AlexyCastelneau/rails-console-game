@@ -1,0 +1,21 @@
+<div class="dark-bkg">
+  <div class="centered-container">
+    <div class="index-container">
+      <h2>Charachers list</h2>
+      <div class="card-container">
+        <% @persos.each do |perso| %>
+          <%= link_to perso_path(perso) do %>
+            <div class="card">
+              <p>Pseudo: <%= perso.pseudo %></p>
+              <p>Playtime: <%= perso.time_conversion(perso.time_played) %></p>
+              <p>Race: <%#= perso.race %></p>
+              <p>Class: <%#= perso.class %></p>
+              <p>Niveau: <%= perso.lvl %></p>
+            </div>
+          <% end %>
+        <% end %>
+      </div>
+    </div>
+    <%= link_to "Back to Menu", "/", class: "back-btn" %>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+.back-btn{
+  position: absolute;
+  bottom: 5vh;
+  left: 10vw;
+  padding: 5px 10px;
+  color: $deep-green;
+  border-width: 2px;
+  border-style: outset;
+  border-color: $deep-green;
+  transition: 0.5s;
+}
+
+.back-btn:hover{
+  color: $green;
+  border-color: $light-green;
+}
