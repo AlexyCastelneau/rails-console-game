@@ -9,13 +9,15 @@
 
 // Your CSS partials
 @import "components/index";
-@import "pages/index";
+@import "pages/index_pages";
+@import "persos/index_persos";
 
 
 body {
   margin: 0;
   padding: 0;
   font-family: "Crimson Text";
+  color: $green;
 }
 
 h1 {
@@ -51,6 +53,7 @@ p {
 a {
   margin: 0;
   padding: 0;
+  color: $green;
   text-decoration: none;
   font-size: 20px;
 }

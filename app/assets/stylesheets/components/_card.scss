@@ -1,0 +1,17 @@
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 15px;
+  width: 250px;
+  gap: 15px;
+  border: 2px;
+  border-style: outset;
+  border-color: $bright-green;
+  border-radius: 3px;
+}
+
+.card:hover{
+  color: $bright-green;
+  border-color: $light-green;
+}

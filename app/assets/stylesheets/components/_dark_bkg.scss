@@ -1,0 +1,8 @@
+.dark-bkg {
+  background-color: $dark;
+  // without it child "height: 100%;" doesn't work but behave like "height: auto;"
+  // but with it "min-height" work like "height"
+  // height: 1px;
+  min-height: 100vh;
+  min-width: 100vw;
+}

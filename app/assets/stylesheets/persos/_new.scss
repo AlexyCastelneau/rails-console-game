@@ -1,0 +1,52 @@
+.perso-form{
+  text-align: center;
+  h3 {
+    margin-bottom: 40px;
+  }
+}
+
+.new_perso {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $green;
+  gap: 10px;
+}
+
+.perso-label{
+  font-size: 20px;
+}
+
+.perso-field{
+  color: $green;
+  background-color: $dark;
+  padding: 5px 8px;
+  border-width: 1px;
+  border-style: outset;
+  border-color: $green;
+  border-radius: 1px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.perso-field:focus{
+  outline: none;
+}
+
+.form-btn {
+  cursor:pointer;
+  margin-top: 25px;
+  padding: 10px 15px;
+  background-color: $dark;
+  color: $green;
+  font-size: 30px;
+  border-width: 3px;
+  border-style: outset;
+  border-color: $green;
+  border-radius: 2px;
+}
+
+.form-btn:hover{
+  color: $deep-green;
+  border-color: $bright-green;
+}
