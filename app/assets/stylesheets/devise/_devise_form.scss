@@ -1,0 +1,112 @@
+.devise-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h2 {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+}
+
+.new_user {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 350px;
+  color: $green;
+  gap: 10px;
+}
+
+.form-label {
+  margin-top: 5px;
+  padding-left: 10px;
+  font-size: 20px;
+  i em {
+    font-size: 16px;
+  }
+}
+
+.form-field {
+  color: $green;
+  background-color: $dark;
+  padding: 5px 8px;
+  border-width: 1px;
+  border-style: outset;
+  border-color: $green;
+  border-radius: 1px;
+  width: 332px;
+  font-size: 20px;
+}
+
+.form-field:focus {
+  outline: none;
+}
+
+.field {
+  margin-top: 10px;
+  position: relative;
+  padding-left: 30px;
+}
+
+.form-check-box {
+  cursor:pointer;
+  position: absolute;
+  top: 2px;
+  left: 10px;
+  margin: 0;
+  height: 20px;
+  width: 20px;
+}
+
+.form-btn {
+  cursor:pointer;
+  margin-top: 25px;
+  padding: 10px 15px;
+  background-color: $dark;
+  color: $green;
+  font-size: 30px;
+  border-width: 3px;
+  border-style: outset;
+  border-color: $green;
+  border-radius: 2px;
+  transition: 0.4s;
+}
+
+.form-btn:hover {
+  color: $deep-green;
+  border-color: $light-green;
+}
+
+.form-small-btn {
+  cursor:pointer;
+  margin-top: 25px;
+  padding: 7px 10px;
+  background-color: $dark;
+  color: $green;
+  font-size: 15px;
+  border-width: 2px;
+  border-style: outset;
+  border-color: $green;
+  border-radius: 2px;
+  transition: 0.4s;
+}
+
+.form-small-btn:hover {
+  color: $deep-green;
+  border-color: $light-green;
+}
+
+.link {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+  margin-top: 25px;
+  a {
+    color: $deep-green;
+    transition: 0.5s;
+  }
+  a:hover {
+    color: $bright-green;
+  }
+}
