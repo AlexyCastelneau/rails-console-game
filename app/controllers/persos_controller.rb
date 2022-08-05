@@ -1,6 +1,6 @@
 class PersosController < ApplicationController
   def index
-    @persos = Perso.all
+    @persos = Perso.where("user_id = ?", current_user.id)
   end
 
   def show
