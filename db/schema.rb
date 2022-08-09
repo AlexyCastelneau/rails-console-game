@@ -46,11 +46,6 @@ ActiveRecord::Schema.define(version: 2022_08_02_141932) do
     t.index ["perso_id"], name: "index_current_stats_on_perso_id"
   end
 
-  create_table "elixirs", force: :cascade do |t|
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
   create_table "enemies", force: :cascade do |t|
     t.string "type", null: false
     t.string "name", null: false
@@ -95,15 +90,10 @@ ActiveRecord::Schema.define(version: 2022_08_02_141932) do
     t.index ["enemy_id"], name: "index_enemy_stats_on_enemy_id"
   end
 
-  create_table "equipment", force: :cascade do |t|
-    t.datetime "created_at", precision: 6, null: false
-    t.datetime "updated_at", precision: 6, null: false
-  end
-
   create_table "games", force: :cascade do |t|
     t.integer "user_id", null: false
     t.integer "perso_id", null: false
-    t.time "session_start", default: "2000-01-01 14:48:34", null: false
+    t.time "session_start", default: "2000-01-01 14:16:41", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["perso_id"], name: "index_games_on_perso_id"
@@ -147,7 +137,7 @@ ActiveRecord::Schema.define(version: 2022_08_02_141932) do
 
   create_table "items", force: :cascade do |t|
     t.boolean "consumable", null: false
-    t.integer "item"
+    t.string "properties"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
