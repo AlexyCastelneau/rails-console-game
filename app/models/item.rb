@@ -12,7 +12,12 @@ class Item < ApplicationRecord
           "int" => arguments[:int], "wis" => arguments[:wis] }
     end
     item.save
+    # à décommenter quand les ligne 18-21 de persos_controller seront déplacées
+    # inventory = Inventory.new
+    # inventory.perso_id = arguments[:perso_id]
+    # inventory.item_id = item
+    return item
   end
 
-  validates :consumable, presence: true
+  validates :consumable, inclusion: { in: [true, false] }
 end

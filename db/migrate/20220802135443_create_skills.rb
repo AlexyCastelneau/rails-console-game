@@ -3,7 +3,7 @@ class CreateSkills < ActiveRecord::Migration[6.1]
     create_table :skills do |t|
       t.text :description
       t.boolean :active, null: false
-      t.integer :skill
+      t.string :properties
 
       t.timestamps
     end

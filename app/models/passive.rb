@@ -1,2 +1,0 @@
-class Passive < ApplicationRecord
-end
