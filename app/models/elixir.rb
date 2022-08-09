@@ -1,2 +1,0 @@
-class Elixir < Item
-end
