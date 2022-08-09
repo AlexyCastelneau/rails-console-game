@@ -9,6 +9,10 @@ class CreatePersos < ActiveRecord::Migration[6.1]
       t.integer :exp, default: 0
       t.integer :exp_needed, default: 100
       t.integer :deaths, default: 0
+      t.string :base_stats
+      t.string :gear
+      t.string :geared_stats
+      t.string :current_stats
 
       t.timestamps
     end
