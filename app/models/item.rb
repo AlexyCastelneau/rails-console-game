@@ -13,10 +13,10 @@ class Item < ApplicationRecord
     end
     item.save
     # à décommenter quand les ligne 18-21 de persos_controller seront déplacées
-    # inventory = Inventory.new
-    # inventory.perso_id = arguments[:perso_id]
-    # inventory.item_id = item
-    return item
+    inventory = Inventory.new
+    inventory.perso = Perso.find(arguments[:perso_id])
+    inventory.item = item
+    return item if inventory.save
   end
 
   validates :consumable, inclusion: { in: [true, false] }

@@ -2,5 +2,5 @@
   <br>
   <%= render "./shared/character_info", character: @perso %>
   <br>
-  btn play
+  <%= link_to "Play", game_path(perso: @perso), class: "perso-btn" %>
 </div>
